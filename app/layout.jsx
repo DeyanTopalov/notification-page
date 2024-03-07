@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <main
-          className={`${plusJakartaSans.className}max-w-[90rem] px-4 md:px-6 text-center antialiased`}
+          className={`${plusJakartaSans.className}max-w-[90rem] px-4 text-center antialiased md:px-6`}
         >
           {children}
         </main>

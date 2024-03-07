@@ -15,5 +15,35 @@
 
 /* CSS Variables based on project design */
 @layer base {
-  :root {}
+  :root {
+    /* Primary Clrs */
+    --red: 1, 90%, 64%;
+    --blue: 219, 85%, 26%;
+
+    /* Secondary Clrs */
+
+    --gray-100: 210, 60%, 98%;
+    --gray-200: 211, 68%, 94%;
+    --gray-250: 205, 33%, 90%;
+    --gray-400: 219, 14%, 63%;
+    --gray-600: 219, 12%, 42%;
+    --gray-800: 224, 21%, 14%;
+
+  }
+}
+
+.test {
+  color: hsl(210, 60%, 98%);
+  /* very light grayish blue */
+  color: hsl(211, 68%, 94%);
+  /* light graish blue 1 */
+  color: hsl(205, 33%, 90%);
+  /* light graysih blue 2 */
+  color: hsl(219, 14%, 63%);
+  /* grayish blue */
+  color: hsl(219, 12%, 42%);
+  /* dark grayish blue */
+  color: hsl(224, 21%, 14%);
+  /* very dark grayish blue */
+
 }
