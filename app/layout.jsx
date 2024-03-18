@@ -9,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-clr-gray-100 grid h-svh w-svw place-items-center overflow-hidden md:h-screen md:w-full">
+      <body className="grid h-svh w-svw place-items-center overflow-hidden bg-clr-gray-100 md:h-screen md:w-full">
         <main
-          className={`${plusJakartaSans.className}max-w-[90rem] px-4 text-center text-base antialiased md:px-6`}
+          className={`${plusJakartaSans.className} max-w-[90rem] px-0 text-center text-base antialiased md:px-6`}
         >
           {children}
         </main>
