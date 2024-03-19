@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="grid h-svh w-svw place-items-center overflow-hidden bg-clr-gray-100 md:h-screen md:w-full">
         <main
-          className={`${plusJakartaSans.className} max-w-[90rem] px-0 text-center text-base antialiased md:px-6`}
+          className={`${plusJakartaSans.className} max-w-[90rem] px-0 text-left text-base antialiased md:px-6`}
         >
           {children}
         </main>
