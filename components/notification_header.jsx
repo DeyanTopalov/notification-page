@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ markAllRead, unreadCount }) => {
   return (
     <div className="flex items-center justify-between ">
       <div className="flex items-center gap-2">
@@ -6,7 +6,7 @@ const Header = () => {
           Notifications
         </h1>
         <span className="flex h-6 w-8 justify-center rounded-md bg-clr-blue font-bold text-white">
-          3
+          {unreadCount}
         </span>
       </div>
 
@@ -16,6 +16,8 @@ const Header = () => {
         focus:text-clr-blue
       "
         aria-label="Mark all notifications as read"
+        type="button"
+        onClick={markAllRead}
       >
         Mark all as read
       </button>
