@@ -9,14 +9,16 @@ const NotificationItem = ({
   unRead,
   notificationImg,
   notificationMessage,
+  onClick,
 }) => {
   const renderIf = (condition, children) => condition && children;
 
   return (
     <section
       className={` grid cursor-pointer rounded-md px-4 py-2 text-sm md:px-6 md:py-4 ${renderIf(unRead, "bg-clr-gray-100")}`}
+      onClick={onClick}
     >
-      <div className="inline_section flex items-center justify-between gap-2  md:gap-4 ">
+      <div className="flex items-center justify-between gap-2  md:gap-4 ">
         <div className="">
           <Image
             src={profilePic}

@@ -31,12 +31,16 @@ const NotificationCard = () => {
   ).length;
 
   return (
-    <div className="grid w-svw max-w-[41.875rem] gap-3 rounded-2xl bg-white px-4 py-6 shadow-lg md:px-6 md:py-2">
+    <article className="grid w-svw max-w-[41.875rem] gap-3 rounded-2xl bg-white px-4 py-6 shadow-lg md:px-6 md:py-2">
       <Header markAllRead={markAllRead} unreadCount={unreadCount} />
       {notifications.map((notification) => (
-        <NotificationItem key={notification.id} {...notification} />
+        <NotificationItem
+          key={notification.id}
+          {...notification}
+          onClick={() => handleNotificationClick(notification.id)}
+        />
       ))}
-    </div>
+    </article>
   );
 };
 

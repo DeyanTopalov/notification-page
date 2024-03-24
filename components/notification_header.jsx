@@ -1,6 +1,6 @@
 const Header = ({ markAllRead, unreadCount }) => {
   return (
-    <div className="flex items-center justify-between ">
+    <header className="flex items-center justify-between ">
       <div className="flex items-center gap-2">
         <h1 className="text-xl font-bold text-clr-gray-800 md:text-2xl">
           Notifications
@@ -21,7 +21,7 @@ const Header = ({ markAllRead, unreadCount }) => {
       >
         Mark all as read
       </button>
-    </div>
+    </header>
   );
 };
 
